@@ -1,0 +1,64 @@
+.counter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 10px;
+  font-family: 'Chivo Mono', monospace;
+  color: white;
+  font-size: 40px;
+}
+
+.background {
+  background-color: #ffe45e;
+  overflow: hidden;
+  height: 100vh;
+ 
+
+}
+
+.backgroundcounter {
+  position: sticky;
+  margin:30px;
+  background-color: #ff6392;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 5px 3px 2px#e2a1b6;
+  
+}
+
+.counter h1 {
+  color: white;
+  font-size: 50px;
+  font-family: 'Chivo Mono', monospace;
+  text-align: center;
+}
+
+.button {
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  text-align: center;
+
+}
+
+.blink {
+  animation: blink-animation 2s steps(5, start) infinite;
+  -webkit-animation: blink-animation 2s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+
